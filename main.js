@@ -7,19 +7,15 @@
 // Consiglio del giorno:
 // Partite dal comprendere bene come è fatto il DOM e il CSS, potete usarli a nostro vantaggio!
 
-// $(".header-right > a").click(
-//   $(".hamburger-menu ul").show();
-// );
 
-
-// $(".header-right > a").click(
-//   $(".hamburger-menu").addClass(".hamburger-menu.active");
-// );
+// $(".header-right > a").click(function() {
+//   $(".hamburger-menu").show();
+// });
+//
+// $(".hamburger-menu .close").click(function() {
+//   $(".hamburger-menu").hide();
+// });
 
 $(".header-right > a").click(function() {
-  $(".hamburger-menu").show();
-});
-
-$(".hamburger-menu .close").click(function() {
-  $(".hamburger-menu").hide();
+  $("div.hamburger-menu").addClass(".hamburger-menu.active");
 });
